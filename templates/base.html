@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!--Materialize CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--CSS-->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css" />
+     
 </head>
 
 <body>
@@ -33,17 +36,16 @@
   <ul class="sidenav" id="mobile-sidenav">
        <img class="responsive-img" src="{{ url_for('static', filename='images/sidenav.jpg') }}" alt="spices-image">
       
-    <li><a class="active" href="#"><i class="fas fa-home black-text"></i>Home</a></li>
+    <li><a class="active" href="#">Home</a></li>
     <li><a href="#!">Register</a></li>
     
     <li><a href="#">Login</a></li>
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
   </ul>
-  
+ <main>
         
-
- 
-    {% block content %} {% endblock %}
+        {% block content %} {% endblock %}
+ </main>
 
     <script src="https://code.jquery.com/jquery-3.4.0.slim.js"integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
